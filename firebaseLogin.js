@@ -35,7 +35,7 @@ loginpush.addEventListener('click', (event) => {
         const urlParams = new URLSearchParams(queryString);
         const link = urlParams.get('redirect')
 
-        newtab.href = `https://${link}/`;
+        newtab.href = `${link}`;
         newtab.click()
     }).catch((error)=>{
         console.log(error)
